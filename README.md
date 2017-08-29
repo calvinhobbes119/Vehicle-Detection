@@ -228,7 +228,7 @@ plt.close(f)    # close the figure
 ```
 
 
-![png](output_13_0.png)
+![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Hog_features.png)
 
 
 ### Noramlize and label training data
