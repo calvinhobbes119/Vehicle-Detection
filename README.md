@@ -231,7 +231,7 @@ plt.close(f)    # close the figure
 ![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Hog_features.png)
 
 
-### Noramlize and label training data
+### Normalize and label training data
 
 For each image in the training set create a label indicating whether this image is of a vehicle or not. Flip the image horizontally to get more training samples.
 
