@@ -489,7 +489,7 @@ def search_windows(img, ystart, ystop, scale, svc, X_scaler, \
 
 ### Apply sliding windows of different scales for different regions in the image
 
-As explained in the video lectures, for efficiency use knowledge of how large the vehicle can be in different sections of the image. Track detect positive windows across multiple frames to reduce the probability of false detection.
+As explained in the video lectures, for efficiency use knowledge of how large the vehicle can be in different sections of the image. Track detected positive windows across multiple frames to reduce the probability of false detection.
 
 ![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/windows.png)
 
@@ -562,6 +562,9 @@ def sliding_window(image):
     return draw_img
 ```
 
+### Test pipeline on test images
+
+Apply the above pipeline on six test images provided in the project.
 
 ```python
 images = []
@@ -596,6 +599,10 @@ for img in images:
 ![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/test5.png)
 ![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/test6.png)
 
+### Apply pipeline to project video
+
+Apply the processing pipeline to the project video
+
 ```python
 # Edit this function to create your own pipeline.
 previous_hot_windows = []
@@ -623,9 +630,17 @@ out_clip = clip1.fl_image(sliding_window) #NOTE: this function expects color ima
     [MoviePy] >>>> Video ready: project_video_output.mp4 
     
     Wall time: 28min 7s
- 
+
+### Video of detected windows in movie
+
 [![Video 1](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled1.png)](https://www.youtube.com/watch?v=7uogSsBcKag)
+
+### Video of heatmap from detected windows in movie
+
 [![Video 2](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled2.png)](https://youtu.be/Djlnq-Vsjqg)
+
+### Video of final output of labeled boxes after thresholding
+
 [![Video 3](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled3.png)](https://youtu.be/C8_uuQls0oM)
 
 ### Discussions
