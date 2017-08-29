@@ -491,6 +491,7 @@ def search_windows(img, ystart, ystop, scale, svc, X_scaler, \
 
 As explained in the video lectures, for efficiency use knowledge of how large the vehicle can be in different sections of the image.
 
+![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/windows.png)
 
 ```python
 def sliding_window(image):
