@@ -489,7 +489,7 @@ def search_windows(img, ystart, ystop, scale, svc, X_scaler, \
 
 ### Apply sliding windows of different scales for different regions in the image
 
-As explained in the video lectures, for efficiency use knowledge of how large the vehicle can be in different sections of the image.
+As explained in the video lectures, for efficiency use knowledge of how large the vehicle can be in different sections of the image. Track detect positive windows across multiple frames to reduce the probability of false detection.
 
 ![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/windows.png)
 
@@ -627,3 +627,7 @@ out_clip = clip1.fl_image(sliding_window) #NOTE: this function expects color ima
 [![Video 1](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled1.png)](https://www.youtube.com/watch?v=7uogSsBcKag)
 [![Video 2](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled2.png)](https://youtu.be/Djlnq-Vsjqg)
 [![Video 3](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled3.png)](https://youtu.be/C8_uuQls0oM)
+
+### Discussions
+
+Currently the pipelines runs slowly because of the number of sliding window positions in each image. I am currently exploring how to make the search simulataneously more efficient and robust against false detections. I also plan to test this algorithm against other video images, and to use Deep-Learning techniques instead of SVM.
