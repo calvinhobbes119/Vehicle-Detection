@@ -471,7 +471,7 @@ def search_windows(img, ystart, ystop, scale, svc, X_scaler, \
             test_features = X_scaler.transform(np.hstack((hog_features,spatial_features, hist_features)).reshape(1, -1))    
             test_prediction = svc.predict(test_features)
             
-            if 1: #test_prediction == 1:
+            if test_prediction == 1:
                 xbox_left = np.int(xleft*scale)
                 ytop_draw = np.int(ytop*scale)
                 win_draw = np.int(window*scale)
