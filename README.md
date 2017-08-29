@@ -626,4 +626,4 @@ out_clip = clip1.fl_image(sliding_window) #NOTE: this function expects color ima
  
 [![Video 1](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled1.png)](https://www.youtube.com/watch?v=7uogSsBcKag)
 [![Video 2](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled2.png)](https://youtu.be/Djlnq-Vsjqg)
-[![Video 3](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled3.png)](https://www.youtube.com/watch?v=7uogSsBcKag)
+[![Video 3](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/Untitled3.png)](https://youtu.be/C8_uuQls0oM)
