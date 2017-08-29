@@ -589,11 +589,12 @@ for img in images:
 
     6
     
-
-
-![png](output_29_1.png)
-
-
+![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/test1.png)
+![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/test2.png)
+![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/test3.png)
+![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/test4.png)
+![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/test5.png)
+![png](https://github.com/calvinhobbes119/Vehicle-Detection/blob/master/test6.png)
 
 ```python
 # Edit this function to create your own pipeline.
